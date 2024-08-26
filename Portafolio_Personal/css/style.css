@@ -232,21 +232,55 @@ body.drak #sobremi .sobremi p{
     color: #fff;
 }
 
-#sobremi .sobremi a {
+#sobremi .sobremi .icons {
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border-radius: 30px;
-    border: 1px solid #000;
     padding: 10px 20px;
     margin-top: 30px;
     transition: .5s;
+    border: 1px solid #fff;
 }
 
 #sobremi .sobremi  .redes a:hover {
     color: #fff;
     background-color: #062766;
     border: 1px solid #fff;
+}
+
+.sobremi a{
+    text-decoration: none;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    /* margin: 10px auto; */
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    right: 20.5em;
+    top: -10em;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #062766;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
 }
 
 /* Habilidades */
