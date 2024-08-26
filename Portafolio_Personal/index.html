@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Personal</title>
+</head>
+<body>
+       <!-- Contenedor del encabezado y menú de navegación -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Karol</a>
+            </div>
+            <!-- Menú de navegación con enlaces a las secciones de la página -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                     <!-- Botón para cambiar entre modos claro y oscuro -->
+                    <button class="switch" id="switch">
+                        <span><i class="fa-solid fa-sun"></i></span>
+                        <span><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                </ul>
+            </nav>
+            <!-- Ícono de menú hamburguesa para dispositivos móviles -->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <!-- Imagen de presentación -->
+            <div class="contenedor-img">
+                <img src="img/1724339468119.jpg" alt="imagen">
+            </div>
+            <!-- Nombre y ocupación -->
+            <h1>Karol Andrea Montoya Rendón</h1>
+            <h2>Desarrolladora Web</h2>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section id="sobremi">
+        <!-- Imagen de perfil -->
+        <div class="contenedor-foto">
+            <img src="img/1724339468119.jpg" alt="imagen">
+        </div>
+        <!-- Descripción personal y experiencia -->
+        <div class="sobremi">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2>Hola, Soy <span>Karol Montoya</span> </h2>
+            <h3>Desarrolladora Web</h3>
+            <p>Esta trayectoria comenzó como mi formación como técnico en programación en el Sena, donde obtuve mi primer título en tecnología. Actualmente, estoy cursando el tecnólogo en análisis y desarrollo de software, lo que me ha permitido profundizar en mis conocimientos, habilidades y en este campo. En tan poco tiempo de mi carrera, he tenido la oportunidad de trabajar en un proyecto que me llena de orgullo, ya que no tenía mucho conocimiento sobre cómo realizar un proyecto mediano, pero gracias a esta experiencia, he desarrollado habilidades valiosas como trabajar contra tiempo, ser muy organizada con mi tiempo, trabajar en equipo, investigar y resolver problemas. Además, he podido aplicar tecnologías como HTML, CSS, JavaScrip y React. También cuento con dos años de experiencia laboral como vendedora comerciante, lo que me ha brindado habilidades valiosas en comunicación y el manjo de clientes. Mi objetivo es seguir expandiendo mis habilidades y conocimientos en el campo del desarrollo de software, con el fin de crear experiencias digitales únicas y atractivas que resuelvan problemas de los clientes. A largo plazo, aspiro a realizar la ingeniería en software y seguirme especializando en este campo, para así convertirme en una profesional altamente capacitada y competitiva.</p>
+
+            <!-- Información de contacto y enlaces a redes sociales -->
+            <div class="redes">
+                <h3>Información de Contacto</h3>
+                <p>Correo Electrónico: montoyakr26@gmail.com</p>
+                <a href="https://www.facebook.com/profile.php?id=100005707395499&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/karol_montoya.11?igsh=MWNiajJmODlsZm8xaA=="><i class="fa-brands fa-instagram"></i></a>  
+                <a href="https://github.com/karolM254" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://walink.co/9dd20d"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:montoyakr26@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades  -->
+    <section class="skills" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Columna de habilidades técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <!-- Barra de progreso para cada habilidad -->
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>76%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Informes (Analisis y Requerimientos)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Negociación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna de habilidades profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <!-- Barra de progreso para cada habilidad -->
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE MIS PROYECTOS -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <!-- Columna para cada proyecto con un breve resumen -->
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Teoría del Color</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Visita al Infierno</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/6.jpg" alt="imagen proyecto">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario de contacto -->
+                <div class="col" id="form">
+                    <input type="text" name="name" id="name" placeholder="Nombre Completo">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <a id="prueba" href="mailto:montoyakr26@gmail.com">Email</a>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="imagen del mapa">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pereira, Barrio Barlín 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3207518942
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: montoyakr26@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PIE DE PÁGINA -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p>&copy;2024 Karol Andrea Montoya. Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100005707395499&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/karol_montoya.11?igsh=MWNiajJmODlsZm8xaA=="><i class="fa-brands fa-instagram"></i></a>  
+            <a href="https://github.com/karolM254" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://walink.co/9dd20d"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:montoyakr26@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+    <!-- Scripts para funcionalidad de la página -->
+    <script src="../Portafolio_Personal/main.js"></script>
+</body>
+</html>

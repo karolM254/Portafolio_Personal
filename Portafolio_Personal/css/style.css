@@ -1,0 +1,730 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+    background-color: #e1e0e0;
+    transition: .3s ease all;
+}
+
+body.dark{
+    background-color: #000;
+}
+
+/* MENU */
+.contenedor-header{
+    background: #001844;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    position: relative;
+    top: 6px;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #3b69be;
+}
+
+.switch{
+    background: #343d5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    display: flex;
+    outline: none;
+    top: 1px;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow:  0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.switch.active{
+    background: orange;
+    color: #000;
+}
+
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+/*Menú hamgurguesa*/
+.nav-responsive{
+    background-color: #001844;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Seccion inicio*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1));
+    background-image: url(../img/fondo-skills.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    text-align: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 45px;
+    border: 10px solid #062766;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 38px;
+    font-size: 33px;
+}
+
+.inicio .contenido-banner h2{
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #062766;
+}
+
+/*Sobre mi */
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 130%;
+    min-width: 300px;
+    flex-shrink: 0;  /* Evita que la imagen se reduzca más allá de su tamaño */
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+    text-align: justify;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 40px;
+    color: #171748;
+    text-decoration-thickness: 5px;
+    font-weight: 600;
+    font-family: 'Righteous';
+}
+
+#sobremi .sobremi h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    font-family: 'Righteous';
+    color: #171748;
+}
+
+#sobremi .sobremi h2 span {
+    color: #0c327a;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #0c327a;
+}
+
+#sobremi .sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #6e6e6e;
+    /* margin-bottom: 12px; */
+}
+
+body.drak #sobremi .sobremi p{
+    color: #fff;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#sobremi .sobremi  .redes a:hover {
+    color: #fff;
+    background-color: #062766;
+    border: 1px solid #fff;
+}
+
+/* Habilidades */
+.skills{
+    background: linear-gradient( #c4bbbbcc, rgba(33, 16, 16, 0.8)), url("../img/fondo-inicio.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 43px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.skills .fila{
+    display: flex;
+    margin-left: 6em;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    position: relative;
+    right: 1em;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #111135;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #111135;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript para los porcentajes de las habilidades*/
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 76%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .informes{
+    width: 0%;
+    animation: 2s informes forwards;
+}
+@keyframes informes {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .negociacion{
+    width: 0%;
+    animation: 2s negociacion forwards;
+}
+@keyframes negociacion {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .trabajoequipo{
+    width: 0%;
+    animation: 2s trabajoequipo forwards;
+}
+@keyframes trabajoequipo {
+    0%{width: 0%;}
+    100%{width: 93%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 78%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 97%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+@keyframes responsabilidad {
+    0%{width: 0%;}
+    100%{width: 97%;}
+}
+
+.skills .skill .adaptabilidad{
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .solucion{
+    width: 0%;
+    animation: 2s solucion forwards;
+}
+@keyframes solucion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+/* Mis Proyectos */
+#proyectos {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#proyectos .titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #111135;
+    text-decoration-thickness: 5px;
+}
+
+#proyectos .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#proyectos .fila .proyecto {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#proyectos .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    /* ;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;  */
+}
+
+/* #proyectos .fila .proyecto:hover img {
+    filter: grayscale(0);
+} */
+
+#proyectos .fila .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #1456d1;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#proyectos .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Formulario */
+.contacto{
+    background: linear-gradient( #c4bbbbcc, rgba(33, 16, 16, 0.8)), url("../img/fondo-inicio.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 43px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #2e353a;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+#prueba{
+    opacity: 0;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #001844;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-swidth: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*Pie de Página*/
+footer{
+    background-color: #001844;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #043da7;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+/* Seccion Responsive */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #001844;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width:700px){
+   /* Seccion Sobre Mi */
+   #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+        position: relative;
+        right: 3rem;
+    }
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+        position: relative;
+        top: 1rem;
+    }
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /* Seccion Habilidades */
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    /* Seccion de los Proyectos*/
+    #proyectos {
+        padding: 50px 0;
+    }
+    #proyectos .fila {
+        display: block;
+    }
+    #proyectos .fila .proyecto {
+        margin: 10px auto;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
